@@ -1,3 +1,8 @@
-- clean: []
-- link: {}
-- shell: []
+- clean: ['~']
+
+- link:
+    ~/.aliases: aliases
+
+- shell:
+  - [grep -xq ". ~/.aliases" ~/.bashrc || printf "\n. ~/.aliases\n" >> ~/.bashrc]
+  - [git submodule update --init --remote, Updating submodules]

@@ -1,6 +1,7 @@
 - clean: ['~']
 
 - link:
+    ~/.dotfiles: ''
     ~/.aliases: aliases
 
 - shell:

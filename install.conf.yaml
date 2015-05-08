@@ -3,7 +3,10 @@
 - link:
     ~/.dotfiles: ''
     ~/.aliases: aliases
+    ~/.functions: functions
 
 - shell:
   - [grep -xq ". ~/.aliases" ~/.bashrc || printf "\n. ~/.aliases\n" >> ~/.bashrc]
+  - [grep -xq ". ~/.functions" ~/.bashrc || printf "\n. ~/.functions\n" >> ~/.bashrc]
+  - [grep -xq "lirc=no" ~/.mplayer/config || printf "\nlirc=no\n" >> ~/.mplayer/config]
   - [git submodule update --init --remote, Updating submodules]

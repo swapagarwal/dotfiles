@@ -1,0 +1,1 @@
+function say() { mplayer -really-quiet "http://translate.google.com/translate_tts?tl=en&q=$*"; }

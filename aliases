@@ -11,6 +11,14 @@ alias install="sudo apt-get install"
 alias iwant="sudo apt-get install"
 alias get="sudo apt-get install"
 
+alias please='sudo `fc -n -l -1`'
+alias sorry='sudo `fc -n -l -1`'
+
 alias myIP="curl http://canihazip.com/s/"
 
 alias cls="clear"
+
+alias publish="python -m SimpleHTTPServer"
+alias web="w3m"
+
+alias exti="exit"

@@ -10,6 +10,4 @@
   - [grep -xq ". ~/.functions" ~/.bashrc || printf "\n. ~/.functions\n" >> ~/.bashrc]
   - [grep -xq "lirc=no" ~/.mplayer/config || printf "\nlirc=no\n" >> ~/.mplayer/config]
   - [grep -xq "export COMMAND_NOT_FOUND_INSTALL_PROMPT=1" ~/.bashrc || printf "\nexport COMMAND_NOT_FOUND_INSTALL_PROMPT=1\n" >> ~/.bashrc]
-  - [git config --global alias.br branch]
-  - [git config --global alias.co checkout]
   - [git submodule update --init --remote, Updating submodules]

@@ -14,9 +14,14 @@ alias get="sudo apt-get install"
 alias please='sudo `fc -n -l -1`'
 alias sorry='sudo `fc -n -l -1`'
 
-alias gc="git commit -m"
-alias gd="git diff --cached"
-alias gs="git status"
+alias gita="git add ."
+alias gitb="git branch"
+alias gitc="git commit"
+alias gitcm="git commit -m"
+alias gitco="git checkout"
+alias gitd="git diff --cached"
+alias gitl="git log"
+alias gits="git status"
 
 alias myIP="curl http://canihazip.com/s/"
 

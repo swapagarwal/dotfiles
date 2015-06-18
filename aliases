@@ -20,9 +20,9 @@ alias gitc="git commit"
 alias gitcm="git commit -m"
 alias gitco="git checkout"
 alias gitd="git diff --cached"
-alias gitl="git log"
+alias gitl="git log --decorate --graph --oneline"
 alias gitp="git push"
-alias gits="git status"
+alias gits="git status -sb"
 
 alias myIP="curl http://canihazip.com/s/"
 

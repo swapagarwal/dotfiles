@@ -12,9 +12,4 @@
     stdout: true
     stderr: true
     stdin: true
-  - [grep -xq ". ~/.aliases" ~/.bashrc || printf "\n. ~/.aliases\n" >> ~/.bashrc]
-  - [grep -xq ". ~/.aliases" ~/.zshrc || printf "\n. ~/.aliases\n" >> ~/.zshrc]
-  - [grep -xq ". ~/.functions" ~/.bashrc || printf "\n. ~/.functions\n" >> ~/.bashrc]
-  - [grep -xq "lirc=no" ~/.mplayer/config || printf "\nlirc=no\n" >> ~/.mplayer/config]
-  - [grep -xq "export COMMAND_NOT_FOUND_INSTALL_PROMPT=1" ~/.bashrc || printf "\nexport COMMAND_NOT_FOUND_INSTALL_PROMPT=1\n" >> ~/.bashrc]
   - [git submodule update --init --remote, Updating submodules]

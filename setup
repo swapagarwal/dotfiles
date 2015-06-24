@@ -3,3 +3,10 @@
 sudo apt-get install git zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s /bin/zsh
+
+grep -xq ". ~/.aliases" ~/.bashrc || printf "\n. ~/.aliases\n" >> ~/.bashrc
+grep -xq ". ~/.aliases" ~/.zshrc || printf "\n. ~/.aliases\n" >> ~/.zshrc
+grep -xq ". ~/.functions" ~/.bashrc || printf "\n. ~/.functions\n" >> ~/.bashrc
+grep -xq "export COMMAND_NOT_FOUND_INSTALL_PROMPT=1" ~/.bashrc || printf "\nexport COMMAND_NOT_FOUND_INSTALL_PROMPT=1\n" >> ~/.bashrc
+
+[ -f "~/.mplayer/config" ] && grep -xq "lirc=no" ~/.mplayer/config || printf "\nlirc=no\n" >> ~/.mplayer/config

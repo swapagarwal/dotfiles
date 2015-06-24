@@ -6,10 +6,9 @@
     ~/.functions: functions
 
 - shell:
-  - [chmod +x setup]
+  - [chmod +x setup, Make script executable]
   -
     command: "./setup"
     stdout: true
     stderr: true
     stdin: true
-  - [git submodule update --init --remote, Updating submodules]

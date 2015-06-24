@@ -9,4 +9,7 @@ grep -xq ". ~/.aliases" ~/.zshrc || printf "\n. ~/.aliases\n" >> ~/.zshrc
 grep -xq ". ~/.functions" ~/.bashrc || printf "\n. ~/.functions\n" >> ~/.bashrc
 grep -xq "export COMMAND_NOT_FOUND_INSTALL_PROMPT=1" ~/.bashrc || printf "\nexport COMMAND_NOT_FOUND_INSTALL_PROMPT=1\n" >> ~/.bashrc
 
-[ -f "~/.mplayer/config" ] && grep -xq "lirc=no" ~/.mplayer/config || printf "\nlirc=no\n" >> ~/.mplayer/config
+if [ -f "~/.mplayer/config" ];
+then
+  grep -xq "lirc=no" ~/.mplayer/config || printf "\nlirc=no\n" >> ~/.mplayer/config;
+fi

@@ -6,9 +6,12 @@
     ~/.functions: functions
 
 - shell:
-  - [sudo apt-get install git zsh]
-  - [sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"]
-  - [chsh -s /bin/zsh]
+  - [chmod +x setup]
+  -
+    command: "./setup"
+    stdout: true
+    stderr: true
+    stdin: true
   - [grep -xq ". ~/.aliases" ~/.bashrc || printf "\n. ~/.aliases\n" >> ~/.bashrc]
   - [grep -xq ". ~/.aliases" ~/.zshrc || printf "\n. ~/.aliases\n" >> ~/.zshrc]
   - [grep -xq ". ~/.functions" ~/.bashrc || printf "\n. ~/.functions\n" >> ~/.bashrc]

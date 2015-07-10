@@ -35,6 +35,9 @@ export PATH=\"$PATH\"
 echo "\033[0;34mAdding your aliases to zsh shell.\033[0m"
 grep -xq ". ~/.aliases" ~/.zshrc || printf "\n. ~/.aliases\n" >> ~/.zshrc
 
+echo "\033[0;34mAdding your functions to zsh shell.\033[0m"
+grep -xq ". ~/.functions" ~/.zshrc || printf "\n. ~/.functions\n" >> ~/.zshrc
+
 TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
 if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
     echo "\033[0;34mTime to change your default shell to zsh!\033[0m"

@@ -1,13 +1,9 @@
 #!/bin/bash
 
-packages=( "curl" "zsh" )
-for i in "${packages[@]}"
-do
-  if [ $(dpkg-query -W -f='${Status}' $i | grep -c "install ok installed") -eq 0 ];
-  then
-    sudo -E apt-get -y install $i
-  fi
-done
+if [ $(dpkg-query -W -f='${Status}' zsh | grep -c "install ok installed") -eq 0 ];
+then
+  sudo -E apt-get -y install zsh
+fi
 
 grep -xq ". ~/.aliases" ~/.bashrc || printf "\n. ~/.aliases\n" >> ~/.bashrc
 grep -xq ". ~/.functions" ~/.bashrc || printf "\n. ~/.functions\n" >> ~/.bashrc
@@ -20,6 +16,6 @@ fi
 
 if [ ! -d "$HOME/.oh-my-zsh" ];
 then
-  sh -c "$(curl -fsSL https://raw.github.com/swapagarwal/dotfiles/master/tools/install.sh)"
-  chsh -s /bin/zsh
+  chmod +x tools/install.sh
+  sh tools/install.sh
 fi

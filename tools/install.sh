@@ -38,9 +38,11 @@ grep -xq ". ~/.aliases" ~/.zshrc || printf "\n. ~/.aliases\n" >> ~/.zshrc
 echo "\033[0;34mAdding your functions to zsh shell.\033[0m"
 grep -xq ". ~/.functions" ~/.zshrc || printf "\n. ~/.functions\n" >> ~/.zshrc
 
+grep -xq "export COMMAND_NOT_FOUND_INSTALL_PROMPT=1" ~/.zshrc || printf "\nexport COMMAND_NOT_FOUND_INSTALL_PROMPT=1\n" >> ~/.zshrc
+
 echo "\033[0;34mSetting up plugins.\033[0m"
 sed -i -e "/^plugins=/ c\\
-plugins=(battery git rails wd)
+plugins=(battery command-not-found git rails wd)
 " ~/.zshrc
 
 TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')

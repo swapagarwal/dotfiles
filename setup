@@ -21,6 +21,8 @@ sudo -E apt-get -y install sublime-text-installer
 wget https://packagecontrol.io/Package%20Control.sublime-package
 mv Package\ Control.sublime-package  /home/$USER/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package
 
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
 if [ ! -d "$HOME/.oh-my-zsh" ];
 then
   chmod +x tools/install.sh

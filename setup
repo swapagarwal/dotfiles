@@ -14,6 +14,10 @@ then
   grep -xq "lirc=no" ~/.mplayer/config || printf "\nlirc=no\n" >> ~/.mplayer/config;
 fi
 
+sudo -E add-apt-repository -y ppa:peterlevi/ppa
+sudo -E apt-get update
+sudo -E apt-get -y install variety
+
 sudo -E add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo -E apt-get update
 sudo -E apt-get -y install sublime-text-installer

@@ -6,9 +6,8 @@
     ~/.functions: functions
 
 - shell:
-  - [chmod +x setup, Make script executable]
   -
-    command: "./setup"
+    command: "source setup"
     stdout: true
     stderr: true
     stdin: true

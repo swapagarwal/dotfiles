@@ -1,8 +1,10 @@
 #!/bin/bash
 
+set -e
+
 if [ $(dpkg-query -W -f='${Status}' zsh | grep -c "install ok installed") -eq 0 ];
 then
-  sudo -E apt-get -y install zsh
+  sudo apt-get -y install zsh
 fi
 
 grep -xq ". ~/.aliases" ~/.bashrc || printf "\n. ~/.aliases\n" >> ~/.bashrc
@@ -14,21 +16,21 @@ then
   grep -xq "lirc=no" ~/.mplayer/config || printf "\nlirc=no\n" >> ~/.mplayer/config;
 fi
 
-sudo -E add-apt-repository -y ppa:peterlevi/ppa
-sudo -E apt-get update
-sudo -E apt-get -y install variety
+sudo add-apt-repository -y ppa:peterlevi/ppa
+sudo apt-get update
+sudo apt-get -y install variety
 
-sudo -E add-apt-repository -y ppa:webupd8team/sublime-text-3
-sudo -E apt-get update
-sudo -E apt-get -y install sublime-text-installer
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get -y install sublime-text-installer
 
 wget https://packagecontrol.io/Package%20Control.sublime-package
 mv Package\ Control.sublime-package  /home/$USER/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package
 
 wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-sudo -E apt-get -y install python-pip
-sudo -E pip install --upgrade pip virtualenv
+sudo apt-get -y install python-pip
+sudo pip install --upgrade pip virtualenv
 
 if [ ! -d "$HOME/.oh-my-zsh" ];
 then

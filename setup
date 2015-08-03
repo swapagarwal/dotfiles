@@ -17,17 +17,15 @@ then
 fi
 
 sudo add-apt-repository -y ppa:peterlevi/ppa
-sudo apt-get update
-sudo apt-get -y install variety
-
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
-sudo apt-get update
+
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+sudo apt-get -y install variety
 sudo apt-get -y install sublime-text-installer
 
 wget https://packagecontrol.io/Package%20Control.sublime-package
 mv Package\ Control.sublime-package  /home/$USER/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package
-
-wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 sudo apt-get -y install python-pip
 sudo pip install --upgrade pip virtualenv

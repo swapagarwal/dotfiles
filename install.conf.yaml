@@ -7,7 +7,7 @@
 
 - shell:
   -
-    command: "source setup"
+    command: "./setup"
     stdout: true
     stderr: true
     stdin: true

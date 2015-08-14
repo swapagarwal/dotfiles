@@ -1,4 +1,5 @@
 alias cd..="cd .."
+alias cdd="cd ~/Dropbox/"
 alias cdw="cd ~/workspace/"
 alias ..="cd .."
 alias ...="cd ../.."

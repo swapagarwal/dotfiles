@@ -16,7 +16,8 @@ alias get="sudo apt-get install"
 alias please='sudo `fc -n -l -1`'
 alias sorry='sudo `fc -n -l -1`'
 
-alias gita="git add ."
+alias gita="git add"
+alias gitaa="git add --all"
 alias gitb="git branch"
 alias gitc="git commit"
 alias gitcl="git clone"

@@ -39,6 +39,8 @@ alias gitrh1="git reset HEAD^ --hard"
 alias gitrb="git rebase"
 alias gits="git status -sb"
 
+alias idle="python -c 'from idlelib.PyShell import main;main()'"
+
 alias myIP="curl http://canihazip.com/s/"
 
 alias cls="clear"

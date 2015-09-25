@@ -4,6 +4,7 @@
     ~/.dotfiles: ''
     ~/.aliases: aliases
     ~/.functions: functions
+    ~/.exports: exports
 
 - shell:
   -

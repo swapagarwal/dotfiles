@@ -9,7 +9,7 @@ fi
 
 grep -xq ". ~/.aliases" ~/.bashrc || printf "\n. ~/.aliases\n" >> ~/.bashrc
 grep -xq ". ~/.functions" ~/.bashrc || printf "\n. ~/.functions\n" >> ~/.bashrc
-grep -xq "export COMMAND_NOT_FOUND_INSTALL_PROMPT=1" ~/.bashrc || printf "\nexport COMMAND_NOT_FOUND_INSTALL_PROMPT=1\n" >> ~/.bashrc
+grep -xq ". ~/.exports" ~/.bashrc || printf "\n. ~/.exports\n" >> ~/.bashrc
 
 if [ -f "$HOME/.mplayer/config" ];
 then

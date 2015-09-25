@@ -1,1 +1,7 @@
 export COMMAND_NOT_FOUND_INSTALL_PROMPT=1
+
+export LANG="en_US"
+export LC_ALL="en_US.UTF-8"
+
+export GOPATH=$HOME/workspace/go
+export PATH=$PATH:$GOPATH/bin

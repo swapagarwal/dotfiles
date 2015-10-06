@@ -42,6 +42,10 @@ alias gits="git status -sb"
 
 alias gor="go run"
 
+alias vqn="variety --quotes-next"
+alias vqp="variety --quotes-previous"
+alias vqs="variety --quotes-save-favorite"
+
 alias idle="python -c 'from idlelib.PyShell import main;main()'"
 
 alias myIP="curl http://canihazip.com/s/"

@@ -41,6 +41,8 @@ alias gitrh1="git reset HEAD^ --hard"
 alias gitrb="git rebase"
 alias gits="git status -sb"
 
+alias hgr="heroku git:remote -a"
+
 alias gor="go run"
 
 alias vqn="variety --quotes-next"

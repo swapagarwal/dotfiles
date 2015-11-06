@@ -7,6 +7,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+alias open="xdg-open ."
+
 alias update="sudo apt-get update"
 alias upgrade="sudo apt-get upgrade"
 alias suu="sudo apt-get update && sudo apt-get upgrade"

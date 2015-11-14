@@ -53,6 +53,7 @@ alias vqs="variety --quotes-save-favorite"
 
 alias idle="python -c 'from idlelib.PyShell import main;main()'"
 alias vea="source venv/bin/activate"
+alias ved="deactivate"
 
 alias myIP="curl http://canihazip.com/s/"
 

@@ -1,13 +1,12 @@
-say () { mplayer -really-quiet "http://translate.google.com/translate_tts?tl=en&q=$*"; }
+backup () { cp $1 $1.bak; }
 
+cdls () { cd "$@" && ls; }
 mkcd () { mkdir -p "$@" && cd "$@"; }
-
-= () { echo "$*" | bc -l; }
 
 gitclg () { git clone http://github.com/$1/$2; }
 
 gog () { go get -u github.com/$1/$2; }
-
 gol () { ln -s $(pwd) $GOPATH/src/github.com/$1/$2; }
 
-backup () { cp $1 $1.bak; }
+= () { echo "$*" | bc -l; }
+say () { mplayer -really-quiet "http://translate.google.com/translate_tts?tl=en&q=$*"; }

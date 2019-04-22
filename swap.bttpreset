@@ -1,8 +1,16 @@
 {
   "BTTPresetName" : "swap",
   "BTTPresetColor" : "214.200000, 8.568000, 90.820800, 255.000000",
-  "BTTPresetUUID" : "97075939-B12C-41F9-8BE2-84081F3917AB",
+  "BTTPresetUUID" : "1C21C6DC-E356-4764-A1FC-A0EBE5FECCDC",
   "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
     {
       "BTTAppBundleIdentifier" : "com.apple.finder",
       "BTTAppName" : "Finder",
@@ -12,11 +20,29 @@
       ]
     },
     {
-      "BTTAppBundleIdentifier" : "BT.G",
-      "BTTAppName" : "Global",
+      "BTTAppBundleIdentifier" : "org.mozilla.firefox",
+      "BTTAppName" : "Firefox",
       "BTTAppAutoInvertIcon" : 1,
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Firefox",
       "BTTTriggers" : [
-
+        {
+          "BTTTouchBarButtonName" : "¯\\_(ツ)_\/¯",
+          "BTTTriggerType" : 629,
+          "BTTTriggerTypeDescription" : "Touch Bar button",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
+          "BTTPredefinedActionType" : 59,
+          "BTTPredefinedActionName" : "Open URL \/ Open URL With Selection",
+          "BTTOpenURL" : "https:\/\/github.com\/ngerakines\/commitment\/blob\/master\/commit_messages.txt",
+          "BTTEnabled2" : 1,
+          "BTTAlternateModifierKeys" : 0,
+          "BTTUUID" : "7A979E81-A55F-4F38-B875-D1A1D5DDD0C2",
+          "BTTEnabled" : 1,
+          "BTTModifierMode" : 0,
+          "BTTOrder" : 0,
+          "BTTDisplayOrder" : 0,
+          "BTTMergeIntoTouchBarGroups" : 0
+        }
       ]
     }
   ],

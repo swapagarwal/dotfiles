@@ -1,0 +1,26 @@
+{
+  "BTTPresetName" : "swap",
+  "BTTPresetColor" : "214.200000, 8.568000, 90.820800, 255.000000",
+  "BTTPresetUUID" : "97075939-B12C-41F9-8BE2-84081F3917AB",
+  "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    }
+  ],
+  "BTTPresetSnapAreas" : [
+
+  ]
+}

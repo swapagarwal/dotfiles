@@ -1,7 +1,7 @@
 {
   "BTTPresetName" : "swap",
   "BTTPresetColor" : "214.200000, 8.568000, 90.820800, 255.000000",
-  "BTTPresetUUID" : "40CAD8D4-FE4C-46DC-BD32-C8A65D85B8AD",
+  "BTTPresetUUID" : "D464744C-5B84-46C9-919C-77EAE0BD6D08",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "org.mozilla.firefox",
@@ -19,13 +19,23 @@
           "BTTPredefinedActionName" : "Open URL \/ Open URL With Selection",
           "BTTOpenURL" : "https:\/\/github.com\/ngerakines\/commitment\/blob\/master\/commit_messages.txt",
           "BTTEnabled2" : 1,
-          "BTTAlternateModifierKeys" : 0,
           "BTTUUID" : "7A979E81-A55F-4F38-B875-D1A1D5DDD0C2",
           "BTTEnabled" : 1,
           "BTTModifierMode" : 0,
           "BTTOrder" : 0,
           "BTTDisplayOrder" : 0,
-          "BTTMergeIntoTouchBarGroups" : 0
+          "BTTMergeIntoTouchBarGroups" : 0,
+          "BTTTriggerConfig" : {
+            "BTTTouchBarAlternateBackgroundColor" : "0.000000, 0.000000, 0.000000, 0.000000",
+            "BTTTouchBarItemIconHeight" : 22,
+            "BTTTouchBarButtonCornerRadius" : 6,
+            "BTTTouchBarItemPlacement" : 0,
+            "BTTTouchBarButtonName" : "¯\\_(ツ)_\/¯",
+            "BTTTouchBarButtonColor" : "4.285065, 50.579504, 255.000000, 255.000000",
+            "BTTTouchBarItemIconWidth" : 22,
+            "BTTTouchBarFreeSpaceAfterButton" : 5,
+            "BTTTouchBarItemPadding" : 0
+          }
         }
       ]
     },
@@ -59,7 +69,7 @@
           "BTTMergeIntoTouchBarGroups" : 0,
           "BTTTriggerConfig" : {
             "BTTScriptType" : 0,
-            "BTTTouchBarButtonColor" : "75.323769, 75.323769, 75.323769, 255.000000",
+            "BTTTouchBarButtonColor" : "254.853130, 251.316189, 0.000000, 255.000000",
             "BTTTouchBarItemIconWidth" : 22,
             "BTTTouchBarShellScriptString" : "curl https:\/\/api.github.com\/repos\/swapagarwal\/swag-for-dev | \/usr\/local\/bin\/jq .stargazers_count",
             "BTTTouchBarItemPlacement" : 0,
@@ -90,7 +100,7 @@
           "BTTMergeIntoTouchBarGroups" : 0,
           "BTTTriggerConfig" : {
             "BTTScriptType" : 0,
-            "BTTTouchBarButtonColor" : "75.323769, 75.323769, 75.323769, 255.000000",
+            "BTTTouchBarButtonColor" : "255.000000, 38.028511, 0.000000, 255.000000",
             "BTTTouchBarItemIconWidth" : 22,
             "BTTTouchBarShellScriptString" : "curl -H \"$(cat ~\/Downloads\/github)\" https:\/\/api.github.com\/users\/swapagarwal | \/usr\/local\/bin\/jq .followers",
             "BTTTouchBarItemPlacement" : 0,

@@ -1,7 +1,7 @@
 {
   "BTTPresetName" : "swap",
   "BTTPresetColor" : "214.200000, 8.568000, 90.820800, 255.000000",
-  "BTTPresetUUID" : "1E4E7665-4CAD-4BA0-8A13-243FBC0FE321",
+  "BTTPresetUUID" : "051D045F-7B81-4D73-8FEF-2E846CAE0FF2",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "com.apple.finder",
@@ -156,7 +156,7 @@
             "BTTTouchBarButtonCornerRadius" : 6,
             "BTTTouchBarItemPlacement" : 2,
             "BTTTouchBarButtonName" : "Lock",
-            "BTTTouchBarButtonColor" : "75.323769, 75.323769, 75.323769, 255.000000",
+            "BTTTouchBarButtonColor" : "254.998982, 255.000000, 255.000000, 255.000000",
             "BTTTouchBarItemIconWidth" : 22,
             "BTTTouchBarOnlyShowIcon" : true,
             "BTTTouchBarFreeSpaceAfterButton" : 5,

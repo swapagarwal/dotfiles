@@ -1,7 +1,7 @@
 {
   "BTTPresetName" : "swap",
   "BTTPresetColor" : "214.200000, 8.568000, 90.820800, 255.000000",
-  "BTTPresetUUID" : "BEF9912F-1AD7-46DD-91FE-0BAA9F7ACEF3",
+  "BTTPresetUUID" : "051E084E-AE42-4511-A780-0804227D6651",
   "BTTPresetContent" : [
     {
       "BTTActivationGroupName" : "Browser",
@@ -448,6 +448,7 @@
           "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
           "BTTPredefinedActionType" : 195,
           "BTTPredefinedActionName" : "Run Apple Script (async in background)",
+          "BTTInlineAppleScript" : "tell application \"System Events\"\r\tset activeApp to name of first application process whose frontmost is true\r\tif \"Google Chrome\" is in activeApp then\r\t\ttell application \"Google Chrome\"\r\t\t\tactivate\r\t\t\topen location \"https:\/\/twitter.com\/DXClubIO\"\r\t\tend tell\r\telse\r\t\ttell application \"Firefox\"\r\t\t\tactivate\r\t\t\topen location \"https:\/\/twitter.com\/DXClubIO\"\r\t\tend tell\r\tend if\rend tell",
           "BTTShellScriptWidgetGestureConfig" : "\/bin\/bash:::-c:::-:::",
           "BTTEnabled2" : 1,
           "BTTRepeatDelay" : 0,

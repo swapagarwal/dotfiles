@@ -1,6 +1,7 @@
 alias cd..="cd .."
 alias cdb="cd -"
 alias cdd="cd ~/Dropbox/"
+alias cdi="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias cdw="cd ~/workspace/"
 alias ..="cd .."
 alias ...="cd ../.."
